@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Account</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .login{
+            color: white;
+            width: 500px;
+            height: 500px;
+            padding: 30px;
+            position: absolute;
+            font-size: 20px;
+            top: 10%;
+            left: 31%;
+            line-height: 50px;
+            border-radius: 10px;
+            background: transparent;
+            text-align: left;
+            vertical-align: middle;
+            border: 3px solid #FEFEFE;
+        }
+        input{
+            height: 30px;
+            width: 98%;
+            padding-left: 10px;
+            border-radius: 8px;
+        }
+        button{
+            margin: 8% 14% 0% 0%;
+            width:120px;
+            height: 50px;
+            padding: 5px;
+            float: left;
+            vertical-align: middle;
+            font-size: 25px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            background-color: #A345F6;
+            color: white;
+        }
+        #myVideo{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        a{
+            color: white;
+            font-size: 14px;
+        }
+        .formstyle:focus-within{
+            background: #4682B4;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="login">
+        <h2>Create Gmail Account</h2>
+        <form action="login-form.html" >
+            <label for="f_name">Full Name </label><br>
+            <input type="text" name="u_name" class="formstyle" placeholder="Full Name" required ><br>
+
+            <label for="c_number">Contact Number: </label><br>
+            <input type="number" name="c_number" class="formstyle" placeholder="Contact Number" minlength="10" required>
+
+            <label for="email_id">Email Id: </label><br>
+            <input type="text" name="e_mail" class="formstyle" placeholder="Enter Email ID" required>
+            <button href="#">Reset</button>
+            <button href="#" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
